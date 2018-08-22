@@ -15,27 +15,35 @@
         <!-- Use a table to build a tic-tac-toe board -->
         <table align="center">
             <tr>
-                <td></td>
-                <td class="vertical"></td>
-                <td></td>
+                <td class="tile" id="0"></td>
+                <td class="tile vertical" id="1"></td>
+                <td class="tile" id="2"></td>
             </tr>
 
             <tr>
-                <td class="horizontal"></td>
-                <td class="vertical horizontal"></td>
-                <td class="horizontal"></td>
+                <td class="tile horizontal" id="3"></td>
+                <td class="tile vertical horizontal" id="4"></td>
+                <td class="tile horizontal" id="5"></td>
             </tr>
 
             <tr>
-                <td></td>
-                <td class="vertical"></td>
-                <td></td>
+                <td class="tile" id="6"></td>
+                <td class="tile vertical" id="7"></td>
+                <td class="tile" id="8"></td>
             </tr>
         </table>
+        <button onclick="window.location.reload()">NEW GAME</button>
 
         <!-- Include our JavaScript after the table is built -->
+        <script src="checkWin.js"></script>
         <script src="t3.js"></script>
+<<<<<<< HEAD
         <script src="checkWin.js"></script>
     </div>
     </body>
+=======
+    </div>
+    </body>
+
+>>>>>>> bd706f24ac12efe8782c160d97470655e80fe831
 </html>

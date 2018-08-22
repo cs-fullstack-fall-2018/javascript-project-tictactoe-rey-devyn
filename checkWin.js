@@ -33,4 +33,8 @@ function checkWin(playerAnswers){
         }
 
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bd706f24ac12efe8782c160d97470655e80fe831
