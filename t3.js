@@ -1,7 +1,7 @@
 var color = "red";
 var nowPlayer = "x";
-var xArray = []
-var oArray = []
+var xArray = [];
+var oArray = [];
 var classname = document.getElementsByClassName("tile");
 function switchPlayerTurn() {
     if(nowPlayer === "x"){

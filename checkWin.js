@@ -27,7 +27,10 @@ var Combos = [winCombo1, winCombo2, winCombo3, winCombo4,
 function checkWin(playerAnswers){
     for (var x = 0; x < Combos.length; x++){    //Iterate through Combos
         if(arrayContainsArray(playerAnswers,Combos[x])){
-            alert("Wins");
+            alert("YOU WIN");
+        }else if(xArray.length + oArray.length === 9 ){
+            alert("CAT")
         }
+
     }
 }
