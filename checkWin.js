@@ -27,14 +27,19 @@ var Combos = [winCombo1, winCombo2, winCombo3, winCombo4,
 function checkWin(playerAnswers){
     for (var x = 0; x < Combos.length; x++){    //Iterate through Combos
         if(arrayContainsArray(playerAnswers,Combos[x])){
-            alert("YOU WIN");
+            setTimeout(function () {
+                alert("YOU WIN");
+            },200)
+
         }else if(xArray.length + oArray.length === 9 ){
-            alert("CAT")
+            setTimeout(function () {
+                alert("CAT");
+            },200)
         }
 
     }
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> bd706f24ac12efe8782c160d97470655e80fe831
+
+
+

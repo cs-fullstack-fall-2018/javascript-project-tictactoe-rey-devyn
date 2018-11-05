@@ -11,7 +11,7 @@ function switchPlayerTurn() {
         nowPlayer = "x";
         color = "red"
     }
-<<<<<<< HEAD
+
 
 
 }
@@ -40,10 +40,7 @@ var changeTile = function() {
 
 for (var i = 0; i < classname.length; i++) {
     classname[i].addEventListener('click', changeTile, false);
-=======
 
-
->>>>>>> bd706f24ac12efe8782c160d97470655e80fe831
 }
 // Setup your Variables
 
