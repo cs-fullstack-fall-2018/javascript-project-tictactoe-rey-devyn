@@ -7,6 +7,14 @@ function arrayContainsArray (superset, subset) {
     });
 
 }
+
+function disableButtons(){
+    var tiles = document.getElementsByClassName("tile")
+
+    for (var i = 0; i < tiles.length; i++) {
+        tiles[i].removeEventListener("click", changeTile)
+    }
+}
 ////////horizontal
 var winCombo1 =["0","1","2"];
 var winCombo2 = ["3","4","5"];
@@ -27,10 +35,31 @@ var Combos = [winCombo1, winCombo2, winCombo3, winCombo4,
 function checkWin(playerAnswers){
     for (var x = 0; x < Combos.length; x++){    //Iterate through Combos
         if(arrayContainsArray(playerAnswers,Combos[x])){
-            alert("YOU WIN");
+
+            setTimeout(function () {
+                if(color === "Red"){
+                    color = "Blue";
+                }else{
+                    color = "Red"
+                }
+                winner.innerText = color + " Wins!";
+                window.alert= function () {}
+            },50)
+            console.log("Here")
+
+
         }else if(xArray.length + oArray.length === 9 ){
-            alert("CAT")
+
+            setTimeout(function () {
+                alert("CAT");
+                window.alert= function () {}
+            },200)
+            console.log("Here1")
         }
 
     }
+
 }
+
+
+
