@@ -37,7 +37,12 @@ function checkWin(playerAnswers){
         if(arrayContainsArray(playerAnswers,Combos[x])){
 
             setTimeout(function () {
-                alert("YOU WIN");
+                if(color === "Red"){
+                    color = "Blue";
+                }else{
+                    color = "Red"
+                }
+                winner.innerText = color + " Wins!";
                 window.alert= function () {}
             },50)
             console.log("Here")

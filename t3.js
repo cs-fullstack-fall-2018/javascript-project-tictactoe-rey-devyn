@@ -1,18 +1,19 @@
-var color = "red";
+var color = "Red";
 var nowPlayer = "x";
 var xArray = [];
 var oArray = [];
 var classname = document.getElementsByClassName("tile");
+var winner = document.getElementById("winner");
 function switchPlayerTurn() {
     if(nowPlayer === "x"){
         nowPlayer = "o";
-        color = "blue"
+        console.log(nowPlayer)
+        color = "Blue"
     }else{
         nowPlayer = "x";
-        color = "red"
+        console.log(nowPlayer)
+        color = "Red"
     }
-
-
 
 }
 // Setup your Variables
@@ -44,26 +45,6 @@ for (var i = 0; i < classname.length; i++) {
 }
 // Setup your Variables
 
-
-var changeTile = function() {
-    if(this.id !== "x" && this.id !== "o") {
-
-        this.style.backgroundColor = color;
-        if(nowPlayer === "x"){
-            xArray.push(this.id)
-        }else{
-            oArray.push(this.id)
-        }
-        this.id = nowPlayer;
-
-        switchPlayerTurn();
-        checkWin(xArray);
-        checkWin(oArray);
-
-    }
-
-
-};
 
 for (var i = 0; i < classname.length; i++) {
     classname[i].addEventListener('click', changeTile, false);
